@@ -1,193 +1,237 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+    box-sizing: border-box
+  }
+  ul
+{
+  display:flex;  
+  list-style:none;
+}
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .menu {
+    width: 100%;
+    position: fixed;
+    background-color: #555;
+    overflow: auto;
+  }
+
+  .menu a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 12%;
+    /* Four links of equal widths */
+    text-align: center;
+  }
+
+  .menu a:hover {
+    background-color: #000;
+  }
+
+  .menu a.active {
+    background-color: #4CAF50;
+  }
+
+  @media screen and (max-width: 500px) {
+    .menu a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+</style>
+
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <title>
+    Dekel Levy
+  </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js">
+  </script>
 </head>
+
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+  <ul class="menu">
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#photos">My Photos</a></li>
+    <li><a href="#playlist">My Playlist</a></li>
+    <li><a href="#like">Like</a></li>
+    <li><a href="#qrcoder">QR code</a></li>
+    <li><a href="#spa">Q&amp;A</a></li>
+    <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section id="about" class="section">
+    <br>
+    <br>
+    <h1 style="font-size:300%">This is me:</h1>
+    <p style="font-size: 100%;color: rgb(89, 0, 255)">
+      <b style="font-size:200%;">Hi! i'm Dekel Levy, 26 years old, originaly from Kfar Vitkin.
+        <br>
+        SISE student in BGU and live in be'er sheva with my amazing girlfriend Stav.
+        <br>
+        I consider myself as an involve student, serving the students that elect me as a council member and chairman of
+        the academy committee of BGU student council.
+        <br>
+        I'm also a Handball goalkeeper at the ASA BGU Handball team, and very passionate to football (yalla hapoel (tel
+        aviv of course) and halla madrid!).
+        <br>
+        My expectation from the course is to learn about the other major part of programming that i didn't learn yet,
+        and i'm excited about it.
+    </p>
+    <br>
+  </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+  <section id="photos" class="section">
+    <h1>Photos of me:</h1>
+    <br>
+    <img alt="PICTURE1" src="Pictures/profile.jpg" width="24.5%">
+    <img alt="PICTURE5" src="Pictures/stav.jpg" width="29%">
+    <img alt="PICTURE6" src="Pictures/bulgaria.jpg" width="24.5%">
+    <br>
+    <br>
+    <br>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+  </section>
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
+  <section id="playlist" class="section">
+    <h1>My playlist:</h1>
+    <br>
+    <br>
+    <p align="center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jC9cDZhsVa8" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+    </p>
+    <br>
+    <br>
+  </section>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+  <section id="like" class="section">
+    <h1>like me! im needy</h1>
+    <br>
+    <p align="center">
+      <div class="fb-like" data-href="https://www.facebook.com/dekel.levy.3" data-width="" data-layout="standard"
+        data-action="like" data-size="large" data-share="false"></div>
+    </p>
+  </section>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+  <!-- <section id="qrcoder" class="section">
+    <h1>scan my code</h1>
+    <p align="center">
+      <img alt="QR code" src="Pictures/qr_code.png">
+    </p>
+    <br>
+    <br>
+  </section>
+
+  <section id="spa" class="section">
+    <h1>Q&amp;A</h1>
+    <ol type="1">
+      <h2>
+        <li>
+          <u>
+            The Three main diffrences between web1,web2 and web3
+          </u>
+          <br>
+        </li>
+      </h2>
+      <p style="font-size: 150%;">
+      </p>
+      <ol type="A">
+        <li>
+          web1 is a page only for one person that is only static or dynamic per person, but for web2 and web3 the pages
+          can be more dynamic, where a person can change the site and it will effect how other person will see the web
+          page on their device.
+          <br>
+          also web3 refreshing more often than web2.
+        </li>
+        <li>
+          from search in the web prespective: web1 only can have you search specific url while web2 enable search of
+          webpage with search engine with set before tags. web3 enables more then that and enables semantic search by
+          the web page content.
+        </li>
+        <li>
+          in web2 and web3, you could use crawlers on the whole web.
+        </li>
+      </ol>
+      <p></p>
+      <h2>
+        <li>
+          <u>
+            Medicines side effects Use Case
+          </u>
+        </li>
+      </h2>
+      <p style="font-size: 150%;">
+        we will use the example of the query: "Advil side effects"
+      </p>
+      <ul>
+        <li>
+          web1: the user need to write specific url of a site talking about a site about Advil side effects
+        </li>
+        <li>
+          web2: the user can search in the search enguine- "Advil side effects" and get links to web pages that have
+          tags of the words or pairs in the query.
+        </li>
+        <li>
+          web3: the user can search in the search enguine- "Advil side effects" and get links to web pages or specific
+          part of web pages that connect well to the query topic.
+        </li>
+      </ul>
+    </ol>
+    <p></p>
+
+    <br>
+    <br>
+    <br>
+  </section>
+
+  <section id="contact" class="section">
+    <h1>contact me</h1>
+    <form action="mailto:erantag@post.bgu.ac.il" method="post" enctype="text/plain" align="center">
+      <p>
+        <label for="Name">Email:</label>
+        <input id="Name" name="Name" type="text" size="25" required="">
+      </p>
+      <p>
+        <label for="Subject">Subject:</label>
+        <input id="Subject" name="Subject" type="text" size="25" required="">
+      </p>
+      <label for="Text">Message:</label>
+      <p>
+        <textarea id="Text" name="Text" rows="10" cols="50" required="">        </textarea>
+      </p>
+      <input type="submit" value="submit">
+      <input type="reset" value="reset">
+    </form>
+    <br>
+    <br>
+    <br>
+  </section> -->
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+
 </body>
+
 </html>
