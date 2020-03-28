@@ -5,19 +5,22 @@
 	height: 70px;
 	background: black;
 }
-ul li{
-	display: inline;
-  }
 
-/* Applies to the entire body of the HTML document (except where overridden by more specific
-selectors). */
+h1{
+	font-size: 500px;
+
+}
 body {
 	margin: 25px;
 	background-color: rgb(240,240,240);
-	font-family: arial, sans-serif;
+	font-family: monaco;
 	font-size: 14px;
 
   }
+  /* b{
+	color: rgb(89, 0, 255);
+  } */
+
   
   /* Applies to all <h1>...</h1> elements. */
   h1 {
@@ -25,9 +28,9 @@ body {
 	font-weight: normal;
 	margin-top: 5px;
   }
-  
-  /* Applies to all elements with <... class="someclass"> specified. */
+/*   
+  /* Applies to all elements with <... class="someclass"> specified. 
   .someclass { color: red; }
   
-  /* Applies to the element with <... id="someid"> specified. */
-  #someid { color: green; }
+  /* Applies to the element with <... id="someid"> specified. 
+  #someid { color: green; } */
