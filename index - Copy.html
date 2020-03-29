@@ -1,0 +1,234 @@
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+    box-sizing: border-box
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .menu {
+    width: 100%;
+    position: fixed;
+    background-color: #555;
+    overflow: auto;
+  }
+
+  .menu a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 12%;
+    /* Eight links of equal widths */
+    text-align: center;
+  }
+
+  .menu a:hover {
+    background-color: #000;
+  }
+
+  .menu a.active {
+    background-color: #4CAF50;
+  }
+
+  @media screen and (max-width: 500px) {
+    .menu a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+</style>
+
+<head>
+  <title>
+    Dekel Levy
+  </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js">
+  </script>
+</head>
+
+<body>
+
+  <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+    <br />
+    <ul style="display: flex;" class="menu">
+
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#playlist">My Playlist</a></li>
+      <li><a href="#like">Like</a></li>
+      <li><a href="#qrcoder">QR code</a></li>
+      <li><a href="#spa">Q&amp;A</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="about" class="section">
+      <br>
+      <br>
+      <h1 style="font-size:300%">This is me:</h1>
+      <p style="font-size: 100%;color: rgb(89, 0, 255);">
+        <b style="font-size:200%;">Hi! i'm Dekel Levy, 26 years old, originaly from Kfar Vitkin.
+          <br>
+          SISE student in BGU and live in be'er sheva with my amazing girlfriend Stav.
+          <br>
+          I consider myself as an involve student, serving the students that elect me as a council member and chairman
+          of
+          the academy committee of BGU student council.
+          <br>
+          I'm also a Handball goalkeeper at the ASA BGU Handball team, and very passionate for football (yalla hapoel
+          (tel aviv of course) and halla madrid!).
+          <br>
+          My expectation from the course is to learn about the other major part of programming that i didn't learn yet,
+          and i'm excited about it.
+      </p>
+      <br>
+    </section>
+
+    <section id="photos" class="section">
+      <h1>Photos of me:</h1>
+      <br>
+      <img alt="PICTURE1" src="Pictures/profile.jpg" width="24.5%">
+      <img alt="PICTURE5" src="Pictures/stav.jpg" width="29%">
+      <img alt="PICTURE6" src="Pictures/bulgaria.jpg" width="24.5%">
+      <br>
+      <br>
+      <br>
+
+    </section>
+
+    <section id="playlist" class="section">
+      <h1>My playlist:</h1>
+      <br>
+      <br>
+      <p align="center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jC9cDZhsVa8" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+      </p>
+      <br>
+      <br>
+    </section>
+
+    <section id="like" class="section">
+      <h1>Like me! i'm needy</h1>
+      <p align="center">
+        <div class="fb-like" data-href="https://sise-web-development-environments.github.io/204318851/" data-width=""
+          data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
+      </p>
+    </section>
+
+    <section id="qrcoder" class="section">
+      <h1>Spread the website to the world!</h1>
+      <p align="center">
+        <img alt="QR code" src="Pictures/qrcode.png">
+      </p>
+      <br>
+      <br>
+    </section>
+
+    <section id="spa" class="section">
+      <h1>Q&amp;A</h1>
+      <ol type="1">
+        <h2 style="font-size: 100%;">
+          <li>
+            <u>
+              Three main diffrences between web1, web2 and web3
+            </u>
+            <br>
+          </li>
+        </h2>
+        <p style="font-size: 100%;">
+        </p>
+        <ol type="a">
+          <li style="font-size: 100%;color: rgb(89, 0, 255);">
+            Web1 was primarily gave information in the form of home pages, but in web2 (Blogs / Wikis) and web3
+            (Live-streams / Waves) the web has become increasingly interactive,
+            and its mostly the user that produce the content.
+          </li>
+          <li style="font-size: 100%;color: rgb(89, 0, 255);">
+            In Web 3.0, computers can interpret information like humans and intelligently generate and distribute useful
+            content tailored to the needs of users. that called recommendation systems.
+          </li>
+          <li style="font-size: 100%;color: rgb(89, 0, 255);">
+            In web3, The three-dimensional design is being used widely. Museum
+            guides, computer games, ecommerce, geospatial contexts, etc. are all examples that use 3D graphics.
+          </li>
+        </ol>
+        <p></p>
+        <h2 style="font-size: 100%;">
+          <li>
+            <u>
+              The diffrences as represented in the Use Case of medicines side effects:
+            </u>
+          </li>
+        </h2>
+        <ul>
+          <li style="font-size: 100%;color: rgb(89, 0, 255);">
+            In Web1: the user would have to write the spevific path for the website that he wanted to read from the side
+            effects of a certain medicine.
+          </li>
+          <li style="font-size: 100%;color: rgb(89, 0, 255);">
+            In web2: the user can search in search engines a specific question about a specific medicine and discover
+            his side effects and get back a webpage about it.
+          </li>
+          <li style="font-size: 100%;color: rgb(89, 0, 255);">
+            In web3: the user can search in search engines a specific question about a specific medicine and discover
+            his side effects and get back a specific part in a webpage that specifily tells about it.
+          </li>
+        </ul>
+      </ol>
+      <p></p>
+
+      <br>
+
+    </section>
+
+    <section id="contact" class="section">
+      <h1>Lets stay in touch!</h1>
+      <form action="mailto:dekelle@post.bgu.ac.il" method="post" enctype="text/plain" align="center">
+        <p>
+          <label for="Name">Your E-mail:</label>
+          <input id="Name" name="Name" type="text" size="25" required="">
+        </p>
+        <p>
+          <label for="Subject">Subject:</label>
+          <input id="Subject" name="Subject" type="text" size="33" required="">
+        </p>
+        <label for="Text">Your message:</label>
+        <p>
+          <textarea id="Text" name="Text" rows="5" cols="50" required="">        </textarea>
+        </p>
+      </p>
+      <label for="Text">Copy to your message one of the emojis if you like:</label>
+      <p>
+        <p>
+          😀 | 😂 | 😜 | 😍
+      </p>
+        <input type="submit" value="submit">
+
+      </form>
+    </section>
+
+
+
+  </body>
+
+</html>
